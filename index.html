@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Block Path Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="minecraft-block-path-finder-main noselect">
+    <div style="margin-top:30px; margin-bottom:10px;">
+     
+      <div id="startlocations" class="minecraft-block-path-finder-cards00">
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+            <div class="tool-input">
+              <input id="startX" type="number" oninput="CalcUpdateOutput()" placeholder="enter value">
+            </div>
+          </div>
+          <div style="margin-top:-5px; color : white;">X-Coordinate</div>
+        </div>
+  
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+  
+            <div class="tool-input">
+              <input id="startY" type="number" oninput="CalcUpdateOutput()" placeholder="enter value">
+            </div>
+  
+          </div>
+          <div style="margin-top:-5px; color : white;">Y-Coordinate</div>
+        </div>
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+  
+            <div class="tool-input">
+              <input id="startZ" type="number" oninput="CalcUpdateOutput()" placeholder="enter value">
+            </div>
+  
+          </div>
+          <div style="margin-top:-5px; color : white;">Z-Coordinate</div>
+        </div>
+      </div>
+      <div id="endlocations" class="minecraft-block-path-finder-cards00" style="margin: 50px 0px 0px 0px;">
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+            <div class="tool-input">
+              <input id="endX" type="number" oninput="CalcUpdateOutput()" placeholder="enter value">
+            </div>
+          </div>
+          <div style="margin-top:-5px; color : white;">X-Coordinate</div>
+        </div>
+  
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+  
+            <div class="tool-input">
+              <input id="endY" type="number" oninput="CalcUpdateOutput()" placeholder="enter value">
+            </div>
+  
+          </div>
+          <div style="margin-top:-5px; color : white;">Y-Coordinate</div>
+        </div>
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+  
+            <div class="tool-input">
+              <input id="endZ" type="number" oninput="CalcUpdateOutput()" placeholder="enter value">
+            </div>
+  
+          </div>
+          <div style="margin-top:-5px; color : white;">Z-Coordinate</div>
+        </div>
+      </div>
+      <div class="minecraft-block-path-finder-cards00">
+        <div class="minecraft-block-path-finder-card00 minecraft-block-path-finder-blocks">
+          <div style="font-size:22px; color : white;">
+  
+            <div class="tool-input">
+              <input id="spacing" type="number" oninput="CalcUpdateOutput()" placeholder="enter value (set to 1 for solid walls/ramps)">
+            </div>
+  
+          </div>
+          <div style="margin-top:-5px; color : white;">Block Spacing</div>
+        </div>
+      </div>
+    </div>
+    <div id="calc-console" oncontextmenu="return false;" class="divparenttable minecraft-block-path-finder-click-blocks ">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
