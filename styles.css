@@ -1,0 +1,299 @@
+  .minecraft-block-path-finder-main {
+    background: none;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    font: bold 17px/30px Arial, Helvetica, sans-serif;
+    min-width: 260px;
+    margin: 50px auto 0px auto;
+    border: none;
+  }
+
+  .minecraft-block-path-finder-main:after {
+    content: "";
+    clear: both;
+  }
+
+  .noselect {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .minecraft-block-path-finder-card {
+    padding: 1rem 2rem 1rem 2rem;
+    height: 70px;
+  }
+
+  .minecraft-block-path-finder-cards {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  }
+
+  .minecraft-block-path-finder-card00 {
+    padding: 1rem 2rem 1rem 2rem;
+    height: 70px;
+  }
+
+  
+  
+  .minecraft-block-path-finder-cards00 {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .minecraft-block-path-finder-blocks {
+    background: #24aded;
+    background: -webkit-linear-gradient(to right, #24aded, #108dc7);
+    background: linear-gradient(to right, #24aded, #108dc7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0px;
+    border: none;
+    text-align: center;
+    min-height: 50px;
+  }
+
+  .minecraft-block-path-finder-click-blocks {
+    background: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #108dc7;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 250px;
+    color: #108dc7;
+    position: relative !important;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .minecraft-block-path-finder-click-blocks::-webkit-scrollbar {
+    display: none;
+  }
+
+  .minecraft-block-path-finder-click-blocks:hover {
+    background: #24aded;
+    color: white;
+    text-shadow: 0px 0px 8px rgb(255, 230, 186), 0px 0px 22px rgb(255, 255, 255),
+      0px -1px 0px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+
+  .minecraft-block-path-finder-cmnd-button {
+    transition: color 0.15s ease-in;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .minecraft-block-path-finder-reset-button:hover {
+    color: #8d8c85;
+    transition: color 0.3s ease-in;
+    transition: color 0.3s ease-out;
+  }
+
+  .stepper_select {
+    display: none;
+  }
+  
+  .tool-input input[type="number"] {
+    width: calc(100% - 2px); 
+    height: 25px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+    background: #24aded;
+    background: -webkit-linear-gradient(to right, #24aded, #108dc7);
+    background: linear-gradient(to right, #24aded, #108dc7);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 25px;
+    outline: none;
+}
+  
+.tool-input input[type="number"]::placeholder {
+    color: #E6E6E6;
+}
+
+
+.tool-input input[type="number"]:focus {
+    outline: none;
+}
+
+  .stepper-input {
+    width: 100%;
+    height: 25px;
+    border: 0px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+  }
+
+  .stepper-input input {
+    display: none;
+  }
+
+  .stepper-input .input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .stepper-input .input :active {
+    background: #24aded;
+  }
+
+  .stepper-input .input .range {
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+  }
+
+  .stepper-input .input .range .list span {
+    display: block;
+    width: 100%;
+    height: 25px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .stepper_btn {
+    background: #24aded;
+    background: -webkit-linear-gradient(to right, #24aded, #108dc7);
+    background: linear-gradient(to right, #24aded, #108dc7);
+    height: 100%;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 25px;
+    cursor: pointer;
+    border: none;
+    transition: all 300ms ease-in-out;
+    flex: 0.2;
+    text-align: center;
+  }
+
+  .stepper_btn:active {
+    transform: translateY(1px);
+  }
+
+  .disabledivclick {
+    pointer-events: none;
+  }
+
+  .table-fixed {
+    width: 100%;
+    caption-side: bottom;
+  }
+
+  .table-fixed tbody {
+    display: block;
+    height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .table-fixed tbody::-webkit-scrollbar {
+    display: none;
+  }
+
+  .table-fixed thead,
+  .table-fixed tbody tr {
+    display: table;
+    width: 100%;
+  }
+
+  .table-fixed td,
+  th {
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+  }
+
+  .table-fixed caption {
+    margin-top: 20px;
+  }
+
+  .divparenttable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #startlocations::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: #108dc7; 
+    z-index: 1;
+    margin: -20px 0;
+}
+  #startlocations::after {
+    content: "Start Location";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #24aded;
+    padding: 0 10px; 
+    z-index: 2;
+    margin: -20px 0;
+}
+  #endlocations::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: #108dc7; 
+    z-index: 1;
+    margin: -20px 0;
+}
+  #endlocations::after {
+    content: "End Location";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #24aded;
+    padding: 0 10px; 
+    z-index: 2;
+    margin: -20px 0;
+}
+	#startlocations,
+#endlocations {
+  position: relative;
+}
